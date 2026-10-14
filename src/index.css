@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  background: #e4eae9;
+  font-family: 'Barlow', system-ui, sans-serif;
+  color: #12222f;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  color: #14788f;
+}
+
+a:hover {
+  color: #0b2237;
+}
+
+/* Pressed, hover and focus states (inline styles cannot express pseudo-classes). */
+.press-94:active { transform: scale(0.94); }
+.press-95:active { transform: scale(0.95); }
+.press-96:active { transform: scale(0.96); }
+.press-97:active { transform: scale(0.97); }
+.press-98:active { transform: scale(0.98); }
+.press-bg:active { background: #f3f6f5 !important; }
+.hover-navy2:hover { background: #14324e !important; }
+.focus-teal:focus { border-color: #14788f !important; }
+.focus-blue:focus { border-color: #3a7fc4 !important; }
+
+@keyframes scanline {
+  0% { top: 12%; }
+  50% { top: 84%; }
+  100% { top: 12%; }
+}
+
+.scanline {
+  animation: scanline 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scanline {
+    animation: none;
+    top: 48%;
+  }
+}
