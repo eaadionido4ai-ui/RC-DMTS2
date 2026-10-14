@@ -14,7 +14,10 @@ export const DEFAULT_SETTINGS: DemoSettings = {
   opMode: 'drill',
 };
 
-/** Reads demo settings from the query string, e.g. `?demoResult=mismatch&codePosition=ops`. */
+/**
+ * Reads demo settings from the query string, e.g. `?demoResult=mismatch&codePosition=ops`.
+ * Until sign-in checks a real credential, this is how to try the other sign-in outcomes.
+ */
 export function readSettings(search: string): DemoSettings {
   const params = new URLSearchParams(search);
   const pick = <K extends keyof DemoSettings>(key: K): DemoSettings[K] => {

@@ -148,7 +148,7 @@ export function AdminActivity() {
         );
       })}
       {s.sec.length === 0 && (
-        <EmptyState>No flagged activity. Set the Tweak to “mismatch” or “duress” and sign in to see entries here.</EmptyState>
+        <EmptyState>No flagged sign-ins or sessions yet.</EmptyState>
       )}
     </div>
   );

@@ -1,8 +1,22 @@
+html,
 body {
   margin: 0;
+  /* Installed, the app should not rubber-band or pull-to-refresh like a web page. */
+  overscroll-behavior: none;
+}
+
+body {
   background: #e4eae9;
   font-family: 'Barlow', system-ui, sans-serif;
   color: #12222f;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* On a phone the app fills the screen, so match its surface edge to edge. */
+@media (max-width: 480px) {
+  body {
+    background: #f3f6f5;
+  }
 }
 
 * {
