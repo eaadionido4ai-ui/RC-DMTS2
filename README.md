@@ -14,6 +14,8 @@ npm test           # unit tests (Vitest)
 npm run lint       # oxlint
 ```
 
+**Live site:** https://eaadionido4ai-ui.github.io/RC-DMTS2/. Every push to `main` is linted, tested, built and published to GitHub Pages by `.github/workflows/deploy.yml`. Pull requests run the same checks without deploying. In the repository settings, **Pages → Source** must be set to **GitHub Actions**.
+
 On a wide screen the app sits in a 390×844 phone frame next to the concept notes and a **Tweaks** panel. Below 480 px wide it fills the screen as a phone app, with no frame and with safe-area insets.
 
 ## Demo settings (Tweaks)
