@@ -6,7 +6,7 @@ export type SignInResult = 'match' | 'mismatch' | 'duress' | 'alternate';
 export type LogoConcept = 'A' | 'B' | 'C' | 'D';
 export type OpMode = 'drill' | 'actual';
 
-/** The prototype's Tweaks: demo-only switches that stand in for a real credential check. */
+/** Demo-only settings (read from the URL) that stand in for a real credential check. */
 export interface DemoSettings {
   demoResult: SignInResult;
   codePosition: PositionKey;
